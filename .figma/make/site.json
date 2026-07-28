@@ -1,0 +1,10 @@
+{
+  "description": "Showcase your professional journey with a sleek, scrollable personal website featuring your resume, work experiences, and projects for potential employers.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
