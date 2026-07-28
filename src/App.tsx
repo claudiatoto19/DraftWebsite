@@ -272,8 +272,8 @@ export default function App() {
             {/* Header */}
             <div className="bg-[#1E3A5F] px-8 py-7">
               <h3 className="text-2xl font-bold text-white mb-1">Ryota Theodora</h3>
-              <p className="text-[#9DB8D4] text-sm">Data Analyst & Software Engineer</p>
-              <p className="text-[#9DB8D4] text-sm mt-1">yourname@email.com · linkedin.com/in/yourname · github.com/yourname</p>
+              <p className="text-[#9DB8D4] text-sm">Data Analyst</p>
+              <p className="text-[#9DB8D4] text-sm mt-1">ryotatheodora@gmail.com · linkedin.com/in/ryotatheodora</p>
             </div>
 
             <div className="p-8 space-y-8 bg-[#FAFBFD]">
