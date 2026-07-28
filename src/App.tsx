@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import headPic from '../assets/Headpic.jpg'
 import resumePdf from '../assets/Resume_Ryota-Theodora.pdf'
 import mlAnalysisPdf from '../assets/ML_analysis.pdf'
 import soccerTrendsPdf from '../assets/soccer_trends.pdf'
@@ -225,7 +226,7 @@ export default function App() {
             <div>
               <div className="w-full aspect-square rounded-2xl mb-8 overflow-hidden bg-[#D4E3F0]">
                 <img
-                  src="/assets/Headpic.jpg"
+                  src={headPic}
                   alt="Ryota Theodora"
                   className="h-full w-full object-cover"
                 />
