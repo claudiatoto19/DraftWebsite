@@ -1,4 +1,8 @@
 import { useState, useEffect } from 'react'
+import resumePdf from '../assets/Resume_Ryota-Theodora.pdf'
+import mlAnalysisPdf from '../assets/ML_analysis.pdf'
+import soccerTrendsPdf from '../assets/soccer_trends.pdf'
+import co2EmissionsPdf from '../assets/CO2_emissions.pdf'
 
 const NAV_LINKS = [
   { label: 'About', href: '#about' },
@@ -90,21 +94,21 @@ const PROJECTS = [
     description:
       'Investigates the stock performance of Netflix (NFLX) using five machine learning models: Decision Trees, Random Forests, K-Nearest Neighbors (KNN), Gradient Boosting, and Support Vector Machines (SVM). The analysis provides insights into the effectiveness of these techniques in stock market prediction.',
     tags: ['Python', 'scikit-learn', 'Machine Learning', 'Finance'],
-    pdfUrl: '#',
+    pdfUrl: mlAnalysisPdf,
   },
   {
     title: 'Analyzing Trends in International Soccer Matches',
     description:
       'Explores historical match data focusing on win-loss ratios and goal-scoring patterns. Advanced statistical methods and machine learning algorithms were applied to identify shifts in regional dominance and the impact of in-game events, informing future predictions about the sport\'s competitive landscape.',
     tags: ['Python', 'Statistics', 'Machine Learning', 'Sports Analytics'],
-    pdfUrl: '#',
+    pdfUrl: soccerTrendsPdf,
   },
   {
     title: 'Carbon Dioxide Emissions Exploratory Data Analysis',
     description:
       'Explores CO₂ emissions globally, focusing on trends, country contributions, and the impact of key events like the COVID-19 pandemic. The findings underscore the critical importance of addressing climate change by reducing carbon emissions.',
     tags: ['Python', 'EDA', 'Data Visualization', 'Climate'],
-    pdfUrl: '#',
+    pdfUrl: co2EmissionsPdf,
   },
 ]
 
@@ -189,7 +193,7 @@ export default function App() {
                 Hi, I'm<br />Ryota Theodora.
               </h1>
               <p className="text-[#4A4A4A] text-base leading-relaxed mb-4">
-                I'm a data analyst and software engineer with a background in Computer Science and a Master's in
+                I'm a data analyst with a background in Computer Science and a Master's in
                 Data Analytics. I specialize in ETL pipelines, machine learning, and turning complex data into
                 actionable insights.
               </p>
@@ -260,8 +264,9 @@ export default function App() {
               Full Resume
             </h2>
             <a
-              href="#"
-              download
+              href={resumePdf}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-3 bg-[#1E3A5F] text-white text-sm font-semibold rounded-lg hover:bg-[#2A5082] transition-colors duration-150 self-start"
             >
               <DownloadIcon />
@@ -428,7 +433,8 @@ function ProjectCard({ project }: { project: typeof PROJECTS[number] }) {
 
       <a
         href={project.pdfUrl}
-        download
+        target="_blank"
+        rel="noopener noreferrer"
         className="inline-flex items-center gap-2 text-sm font-semibold text-[#1E3A5F] hover:gap-3 transition-all duration-150"
       >
         <span>Learn More</span>
